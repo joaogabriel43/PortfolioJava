@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfólio | João Gabriel Nascimento</title>
+</head>
+<body>
+<header class="main-header">
+    <div class="container">
+        <div id="logo">João Gabriel N.</div>
+        <nav>
+            <a href="#about">Sobre Mim</a>
+            <a href="#projects">Projetos</a>
+            <a href="#certificates">Certificados</a>
+            <a href="#contact">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <section id="hero">
+        <div class="hero-text">
+            <h1 id="name-title"></h1>
+            <p id="job-title" class="subtitle"></p>
+        </div>
+    </section>
+
+    <section id="about" class="content-section reveal">
+        <h2>Sobre Mim</h2>
+        <p id="summary"></p>
+    </section>
+
+    <section id="projects" class="content-section reveal">
+        <h2>Projetos em Destaque</h2>
+        <div id="project-list"></div>
+    </section>
+
+    <section id="certificates" class="content-section reveal">
+        <h2>Certificações e Cursos</h2>
+        <div id="certificate-list"></div>
+    </section>
+
+    <section id="contact" class="content-section reveal">
+        <h2>Entre em Contato</h2>
+        <form id="contact-form">
+            <div class="form-group">
+                <input type="text" id="contact-name" name="name" required>
+                <label for="contact-name">Seu Nome</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="contact-email" name="email" required>
+                <label for="contact-email">Seu E-mail</label>
+            </div>
+            <div class="form-group">
+                <textarea id="contact-message" name="message" rows="5" required></textarea>
+                <label for="contact-message">Sua Mensagem</label>
+            </div>
+            <button type="submit" class="cta-button">Enviar Mensagem</button>
+        </form>
+        <p id="form-status"></p>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 João Gabriel Nascimento</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
